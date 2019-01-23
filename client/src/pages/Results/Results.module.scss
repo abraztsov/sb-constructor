@@ -1,0 +1,22 @@
+@import "../../_imports.scss";
+
+.root {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.property {
+  padding: 20px 0;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  table {
+    td {
+      padding-right: 20px;
+    }
+  }
+}
