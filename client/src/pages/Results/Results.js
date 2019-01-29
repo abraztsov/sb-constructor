@@ -35,10 +35,11 @@ export default class Results extends PureComponent {
   };
 
   async componentDidMount() {
+
     const {
       data: { results }
     } = await axios.get(
-      `${process.env.REACT_APP_SERVER_DOMAIN_API}/test/results`
+      `http://localhost:8080/test/results`
     );
 
     const stats = {};
