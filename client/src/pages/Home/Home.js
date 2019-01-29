@@ -40,7 +40,7 @@ export default class Home extends PureComponent {
   };
 
   onFinishTestClick = async () => {
-    await axios.post(`http://localhost:8080/test/result`, {
+    await axios.post(`http://localhost:8080/api/test/result`, {
       result: this.state.selected
     });
 

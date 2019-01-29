@@ -39,7 +39,7 @@ export default class Results extends PureComponent {
     const {
       data: { results }
     } = await axios.get(
-      `http://localhost:8080/test/results`
+      `http://localhost:8080/api/test/results`
     );
 
     const stats = {};
