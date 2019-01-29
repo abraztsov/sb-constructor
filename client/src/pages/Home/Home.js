@@ -55,7 +55,7 @@ export default class Home extends PureComponent {
         <h1 className={s.title}>Eyeliner</h1>
         {Object.keys(EYELINEARS).map(property => {
           const { types, name } = EYELINEARS[property];
-          console.log(types);
+
           return (
             <div key={property} className={s.property}>
               <h2>{name}</h2>
@@ -68,7 +68,7 @@ export default class Home extends PureComponent {
                       selected[property] === name && s.selectedType
                     )}
                     onClick={() =>
-                      this.onSelect({ name, property, product: EYELINEARS })
+                      this.onSelect({ typeName: name, property, product: EYELINEARS })
                     }
                   >
                     {name}
